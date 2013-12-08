@@ -1,0 +1,98 @@
+/html/body/div/div/div/div/div/div/div/div/ul/li/a 344
+/html/body/div/div/div/div/div/div/div/div/ul/li/a/span 304
+/html/body/div/div/div/div/div/div/div/ul/li/a 287
+/html/body/div/div/div/div/div/div/div/ul/li/a/span 266
+/html/body/div/div/div/div/div/ul/li/a 193
+/html/body/div/div/div/div/div/div/div/div/ul/li/a/span/span 161
+/html/body/div/div/div/div/div/div/div/ul/li/a/span/span 61
+/html/body/div/div/div/div/div/div/ul/li/a/span 60
+/html/body/div/div/div/div/div/div/div/div/div/div/ul/li/a 56
+/html/body/div/div/div/div/div/div/div/div/div/div/ul/li/a/span 48
+/html/body/div/div/div/div/div/div/div/div/ul/li/a/noscript 48
+/html/body/div/div/div/nav/div/div/div/div/div/div/div/div/div/ul/li/a 44
+/html/body/div/div/div/div/div/div/div/ul/li/a/noscript 36
+/html/body/div/div/div/div/div/div/ul/li/a 36
+/html/body/div/div/div/div/div/div/ul/li/a/span/span 24
+/html/body/div/div/div/div/div/div/div/div/ul/li/a/p 24
+/html/body/div/div/div/nav/div/div/div/div/div/ul/li/a 23
+/html/body/div/div/div/div/div/a/ul 20
+/html/body/div/div/div/div/div/div/div/ul/li/a/p 18
+/html/body/div/div/div/div/div/a 18
+/html/body/div/div/div/div/div/div/div/div/ul/li/a/span/span/strong 18
+/html/body/div/div/div/div/div/div/div/div/div/div/ul/li/a/span/noscript 16
+/html/body/div/div/div/div/div/div/div/div/div/div/a 15
+/html/body/div/div/div/header/div/div/div/div/a/div/span 15
+/html/body/div/div/div/div/div/div/div/ul/li/a/span/p 13
+/html/body/div/div/div/div/div/div/div/ul/li/a/span/span/strong 13
+/html/body/div/div/div/div/div/div/div/div/ul/li/a/span/div/ul/li 12
+/html/body/div/div/div/div/div/a/ul/li 10
+/html/body/div/div/div/div/div/div/div/ul/li/a/div/ul/li 10
+/html/body/div/div/div/div/div/div/div/ul/li/a/div/ul 10
+/html/body/div/div/div/header/div/div/div/div/a/div 9
+/html/body/div/div/div/header/div/div/div/div/div/a 9
+/html/body/div/div/div/div/div/div/div/div/ul/li/a/span/span/p 9
+/html/body/div/div/div/div/div/div/div/div/ul/li/a/span/div/ul/li/noscript 6
+/html/body/div/div/div/div/div/div/div/div/ul/li/a/span/div/ul 6
+/html/body/div/div/div/header/div/div/div/div/a 4
+/html/body/div/div/div/header/div/div/div/div/div/div/div/div/a 4
+/html/body/div/div/div/div/div/div/div/div/div/a 4
+/html/body/div/div/div/div/div/div/div/ul/li/a/div 4
+/html/body/div/div/div/div/div/div/div/div/a 3
+/html/body/div/div/div/div/div/div/div/div/div/div/span/a 3
+/html/body/div/div/div/div/div/a/span 3
+/html/body/div/div/div/div/div/div/div/div/ul/li/a/span/div 2
+/html/body/div/div/div/div/div/div/div/div/span/span/a 2
+/html/body/div/div/div/div/a 2
+/html/body/div/div/div/nav/div/div/div/div/div/div/div/div/div/div/p/a 2
+/html/body/div/div/div/nav/div/div/div/div/div/div/div/div/div/div/a 2
+/html/body/div/div/div/div/div/div/div/a 2
+/html/body/div/div/div/nav/div/div/div/div/div/div/div/div/div/ul/li/a/span 2
+/html/body/div/div/div/nav/div/div/div/div/div/div/div/div/div/ul/li/a/span/small 2
+/html/body/div/div/div/header/div/div/div/div/div/a/strong 1
+/html/body/div/div/div/nav/div/div/div/div/div/div/div/div/div/div/p/a/strong 1
+/html/body/div/div/div/div/div/div/div/div/a/span 1
+/html/body/div/div/div/nav/div/div/div/div/div/div/div/div/div/div/div/a 1
+/html/body/div/div/div/div/div/div/div/div/span/a 1
+/html/body/div/div/div/div/div/div/span/a 1
+/html/body/div/div/div/header/div/div/div/div/a/div/span/strong 1
+/html/body/div/div/div/header/div/div/div/div/a/div/span/small 1
+/html/body/div/div/div/div/address/a 1
+48
+/html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[1]/a[1]
+Numero de filhos de a 12
+Informação em: /html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[1]
+/html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[1]/a[2]
+Numero de filhos de a 1
+Não é um elemento = + notebook
+Informação em: /html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[1]
+/html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[2]/a[1]
+Numero de filhos de a 14
+Informação em: /html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[2]
+/html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[2]/a[2]
+Numero de filhos de a 1
+Não é um elemento = + celulares
+Informação em: /html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[2]
+/html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[3]/a[1]
+Numero de filhos de a 12
+Informação em: /html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[3]
+/html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[3]/a[2]
+Numero de filhos de a 1
+Não é um elemento = + tv 3d
+Informação em: /html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[3]
+/html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[4]/a[1]
+Numero de filhos de a 16
+Informação em: /html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[4]
+/html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[4]/a[2]
+Numero de filhos de a 1
+Não é um elemento = + geladeira/refrigerador
+Informação em: /html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[4]
+/html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[5]/a[1]
+Numero de filhos de a 14
+Informação em: /html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[5]
+/html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[5]/a[2]
+Numero de filhos de a 1
+Não é um elemento = + conjunto de sofá
+Informação em: /html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[5]
+/html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[6]/a[1]
+Numero de filhos de a 14
+Informação em: /html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/div/ul/li[6]
