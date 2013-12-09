@@ -57,23 +57,26 @@ def extruct(doc1, path)
 		puts node.path
 		puts 'Numero de filhos de ' + node.name  + ' ' + node.children.length.to_s
 		if  node.children.length > 1 
+				node.children.each() do |child|
+					puts child.name + ' [' + child.content.gsub("\n", '').gsub('	', '') + ']'
+				end
 			if typeChildrenHeterogeneos?(node)
-				puts 'Informação em: ' + node.path
+				puts 'extraindo ... '
+				
 			else
-				puts 'Menu em: ' + node.path;
+				typeParent(node.parent)
 			end
 		else 
 			if !node.child.element?()
-				puts 'Não é um elemento = ' + node.child.content  
+				puts 'Não é um elemento = ' + node.child.content
+				typeParent(node.parent)
 			else 
-				if typeChildrenHeterogeneos?(node.)
-					puts 'Informação em: ' + node.path
+				if typeChildrenHeterogeneos?(node.child)
+					puts 'extraindo ...' + node.child.name
 				else
-					puts 'Menu em: ' + node.path;
 				end
 			end
 		end
-		typeParent(node.parent)
 	end
 end
 
@@ -82,9 +85,25 @@ def typeParent(node)
 		typeParent(node.parent)
 	else 
 		if typeChildrenHeterogeneos?(node)
-			puts 'Informação em: ' + node.path
+			puts 'Extraindo : ' + node.name
+			node.children.each do |c|
+				puts c.name
+			end
 		else
-			puts 'Menu em: ' + node.path;
+			puts 'Menu em: ' + node.name
+		end
+	end
+
+end
+
+def typeChild(node)
+	if node.children == 1
+		typeParent(node.child)
+	else 
+		if typeChildrenHeterogeneos?(node)
+			puts 'Extraindo : ' + node.name
+		else
+			puts 'Menu em: ' + node.name
 		end
 	end
 
@@ -92,14 +111,17 @@ end
 
 def typeChildrenHeterogeneos?(node) 
 	list = Hash.new 
-	node.children.each do |children|
-		key = children.name
-		if list.has_key?(key)
-			num = list.fetch(key)
-			num += 1
-			list[key] = num 
-		else
-			list[key] = 1
+	node.children.each do |child|
+		key = child.name
+		content = child.content.gsub("\n", '').gsub('	', '')
+		if(!(content == '' && key != 'text'))
+			if list.has_key?(key)
+				num = list.fetch(key)
+				num += 1
+				list[key] = num 
+			else
+				list[key] = 1
+			end
 		end
 	end
 	
@@ -111,8 +133,8 @@ end
 
 
 
-#doc1 = Nokogiri::HTML(open('http://www.pontofrio.com.br/'))
-doc1 = Nokogiri::HTML(open('http://www.magazineluiza.com.br/'))
+doc1 = Nokogiri::HTML(open('http://www.pontofrio.com.br/'))
+#doc1 = Nokogiri::HTML(open('http://www.magazineluiza.com.br/'))
 #doc1 = Nokogiri::HTML(open('http://www.nytimes.com/'))
 #doc1 = Nokogiri::HTML(open('http://www.gizmodo.com/'))
 
@@ -120,7 +142,7 @@ doc1 = Nokogiri::HTML(open('http://www.magazineluiza.com.br/'))
 
 list = getMostFreqPath(doc1)
 
-list.each do |key, val|
+list[0..5].each do |key, val|
 	#doc1.xpath(key).each do |node|
 #		if node.element?
 #			puts key + ' é um elemento ' + node.children.length(). to_s
@@ -128,14 +150,14 @@ list.each do |key, val|
 #			puts key + ' é um text'
 #		end
 #	end
-	puts '' + key.to_s + ' ' + val.to_s 
+#	puts '' + key.to_s + ' ' + val.to_s 
+	extruct(doc1, key);
 end
 
-first = list.first
+#first = list.first
+#path  = first.first
 
-path  = first.first
-
-puts doc1.xpath(path).size
+#puts doc1.xpath(path).size
 
 #printPath(doc1, '/html/body/div/div/div/div/div/a')
-extruct(doc1, path)
+#extruct(doc1, path)
