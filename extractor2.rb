@@ -68,10 +68,12 @@ def checkOut(node, select, total, nivel)
 				checkOut(node.parent, node.name + ' ' + select, total, nivel + 1)
 			else
 				puts node.path
+				isMenu?(node)
 				#puts node.to_html.gsub("\n", '').gsub('  ', '')
 			end
 		else
 			puts node.path
+			isMenu?(node)
 			#puts node.to_html.gsub("\n", '').gsub('  ', '')
 		end
 	else
@@ -84,9 +86,28 @@ def checkOut(node, select, total, nivel)
 
 end
 
-def isMenu(node)
-	elementos = countValidNode(node)
-
+def isMenu?(node)
+	
+	elementos = countIn(node)
+	links = node.css('a').length
+	puts 'elemnetos = ' + elementos.to_s + ' e links = ' + links.to_s
+	list = typeChildrenHeterogeneos(node)
+	if list.size <= 1
+		v = 0
+		list[0..0].each do |k, val|
+			v = val
+		end
+		if v >= links
+			puts 'é menu'
+			puts node.to_html
+		else
+			puts 'é conteudo'
+			puts node.to_html
+		end
+	else
+		puts 'é conteudo'
+		puts node.to_html
+	end
 end
 
 def checkVizinhos(node)
@@ -113,11 +134,36 @@ def countValidNode(node)
 	count = 0;
 	node.children.each do |n|
 		content = n.content.gsub("\n", '').gsub('	', '').gsub(' ', '')
-		if (!(content == '' && n.name != 'text') && n.name != 'script' && n.name != 'noscript')
+		if (!(content == '' && n.name == 'text') && n.name != 'script' && n.name != 'noscript')
 			count += 1
 		end
 	end
 	return count
+end
+
+def typeChildrenHeterogeneos(node) 
+	list = Hash.new 
+	node.children.each do |child|
+		key = child.name
+		content = child.content.gsub("\n", '').gsub('	', '').gsub(' ', '')
+		if(!(content == '' && key == 'text'))
+			if list.has_key?(key)
+				num = list.fetch(key)
+				num += 1
+				list[key] = num 
+			else
+				list[key] = 1
+			end
+		end
+	end
+
+	list = list.sort_by{|key, val| val * -1}
+	
+	list.each do |k, v|
+		puts k.to_s + ' ' + v.to_s
+	end
+
+	return list
 end
 
 #doc1 = Nokogiri::HTML(open('http://www.pontofrio.com.br/'))
@@ -125,8 +171,8 @@ end
 #doc1 = Nokogiri::HTML(open('http://www.nytimes.com/'))
 #doc1 = Nokogiri::HTML(open('http://www.gizmodo.com/'))
 #doc1 = Nokogiri::HTML(open('http://www.kotaku.com/'))
-doc1 = Nokogiri::HTML(open('http://g1.globo.com/'))
-#doc1 = Nokogiri::HTML(open('http://www.skoob.com.br/'))
+#doc1 = Nokogiri::HTML(open('http://g1.globo.com/'))
+doc1 = Nokogiri::HTML(open('http://www.skoob.com.br/'))
 #doc1 = Nokogiri::HTML(open('http://www.youtube.com'))
 
 list = getMostFreqPath(doc1)
